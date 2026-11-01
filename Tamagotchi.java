@@ -30,10 +30,10 @@ public class Tamagotchi {
     // la mehode qui fait parler le tamagotchi
     public void parler(){
         if(energie > 5){
-            System.out.println("nom tamagotchi:"+ nom + "Etat: heureux");
+            System.out.println("nom tamagotchi : "+ nom + " Etat : heureux");
 
         }else{
-            System.out.println("nom tamagotchi:"+ nom + "Etat: affamé");
+            System.out.println("nom tamagotchi : "+ nom + " Etat : affamé");
 
         }
     }
@@ -47,7 +47,7 @@ public class Tamagotchi {
              if(energie > maxEnergie){
                 energie=maxEnergie;
            
-            } System.out.println(nom + "Merci !");
+            } System.out.println(nom + " Merci !");
         }
     }
     // controle si le tamagotchi a atteint son age limite
@@ -55,7 +55,7 @@ public class Tamagotchi {
         return age==dureeDeVie;
         
     }
-    //la methode vire
+    //la methode vivre
 
     
     public boolean vivre() {
@@ -67,8 +67,8 @@ public class Tamagotchi {
             return false;
         }
         if(energie > 0){
-            age=age+1;
-            energie=energie-1;
+            age = age + 1;
+            energie = energie - 1;
             if(ageLimite()){
                 System.out.println("j'ai atteint mon age limite!");
             }else{
