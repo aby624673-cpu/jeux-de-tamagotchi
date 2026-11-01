@@ -47,7 +47,7 @@ public class Tamagotchi {
              if(energie > maxEnergie){
                 energie=maxEnergie;
            
-            } System.out.println("le tamagotchi n’a pas faim");
+            } System.out.println(nom + "Merci !");
         }
     }
     // controle si le tamagotchi a atteint son age limite
